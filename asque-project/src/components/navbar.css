@@ -1,0 +1,19 @@
+nav {
+    background: var(--main-bg);
+    height: 10%;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem calc((100vw - 900px) / 2);
+    z-index: 99999;
+    transition: all 0.5s ease-in-out 0.5s;
+}
+nav h2 {
+    margin-top: 0.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: 700;
+}
