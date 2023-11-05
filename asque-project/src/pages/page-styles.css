@@ -1,0 +1,255 @@
+/* ================================
+============ SHARED STYLES ==============
+================================ */
+.reset-div,
+.recover-password-div,
+.forgot-password-div,
+.login-div,
+.sign-up-div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.recover-password-quote,
+.forgot-password-quote,
+.reset-quote,
+.login-quote,
+.sign-up-quote {
+    background: #BE774C;
+    width: 50%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.recover-password-quote .quote,
+.forgot-password-quote .quote,
+.reset-quote .quote,
+.login-quote .quote,
+.sign-up-quote .quote {
+    font-weight: 700;
+    width: 70%;
+    color: #111111;
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+.recover-password-quote .author,
+.forgot-password-quote .author,
+.reset-quote .author,
+.login-quote .author,
+.sign-up-quote .author {
+    display: flex;
+    font-size: 14px;
+    margin-top: 10px;
+    color: #1D1D1F;
+}
+
+.recover-password-block,
+.forgot-password-block,
+.reset-password-block,
+.login-block,
+.signup-block {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.recover-password-block h2,
+.forgot-password-block h2,
+.reset-password-block h2,
+.signup-block h2 {
+    color: #BE774C;
+    font-size: 36px;
+}
+
+.recover-password-block .recover,
+.forgot-password-block .forgot,
+.reset-password-block .reset,
+.login-block .login,
+.signup-block .sign-up {
+    color: #BE774C;
+    margin-top: 10px;
+    font-size: 28px;
+}
+
+.recover-password-block .recover-description,
+.forgot-password-block .forgot-description,
+.reset-password-block .reset-description,
+.login-block .login-description,
+.signup-block .signup-description {
+    font-weight: 500;
+}
+
+.recover-password-block .recover-form .form-group input,
+.forgot-password-block .forgot-form .form-group input,
+.reset-password-block .reset-form .form-group input,
+.signup-block .signup-form .form-group input,
+.login-block .login-form .form-group input {
+    font-size: 14px;
+}
+
+.forgot-password-block .forgot-form .form-group label,
+.reset-password-block .reset-form .form-group label,
+.login-block .login-form .form-group label,
+.signup-block .signup-form .form-group label {
+    font-weight: 500;
+}
+
+.recover-password-block .recover-form .recover-btn,
+.forgot-password-block .forgot-form .forgot-btn,
+.reset-password-block .reset-form .reset-btn,
+.login-block .login-form .sign-in-btn,
+.signup-block .signup-form .sign-up-btn {
+    background: #BE774C;
+    color: #FEFEFE;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.login-block .login-form .google-btn,
+.signup-block .signup-form .google-btn {
+    background: transparent;
+    color: #1D1D1F;
+    width: 100%;
+    border: 1px solid #BE774C;
+    margin-top: 10px;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.reset-form .form-group .reveal,
+.login-form .form-group .reveal,
+.signup-form .form-group .reveal {
+    width: 100%;
+    position: relative;
+}
+
+.reset-form .form-group .reveal .eye-span,
+.login-form .form-group .reveal .eye-span,
+.signup-form .form-group .reveal .eye-span {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    padding-right: 1px;
+}
+
+.reset-form .form-group .reveal .eye-span i,
+.login-form .form-group .reveal .eye-span i,
+.signup-form .form-group .reveal .eye-span i {
+    font-size: 12px;
+    color: #7C7C7C;
+}
+
+.reset-password-block .reset-form i,
+.login-block .login-form i,
+.signup-block .signup-form i {
+    color: #BE774C;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.login-block .login-form .sign-in-option,
+.signup-block .signup-form .sign-in-option {
+    text-align: center;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.login-block .login-form .sign-in-option a,
+.signup-block .signup-form .sign-in-option a {
+    color: #BE774C;
+}
+
+/* ================================
+============ SIGN UP ==============
+================================ */
+.signup-block .signup-div {
+    width: 50%;
+    font-weight: 500;
+}
+
+.signup-block .signup-form {
+    width: 50%;
+}
+
+/* ================================
+============ LOGIN ==============
+================================ */
+
+.login-block .login-div {
+    width: 45%;
+}
+
+.login-block .login-form {
+    width: 45%;
+}
+
+.login-block .login-form .sign-in-option {
+    margin-top: 30px;
+}
+
+.login-block .login-form .remember-forgot-div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -5px;
+    margin-bottom: 20px;
+    color: #1D1D1F;
+}
+
+.login-block .login-form .remember-forgot-div a {
+    text-decoration: underline;
+    color: #1D1D1F;
+}
+
+.login-block .login-form .remember-forgot-div a:hover {
+    color: #BE774C !important;
+}
+
+/* ================================
+============ FORGOT ==============
+================================ */
+.forgot-password-block .forgot-div {
+    width: 50%;
+    font-weight: 500;
+}
+
+.forgot-password-block .forgot-form {
+    width: 50%;
+}
+
+/* ================================
+============ RECOVER ==============
+================================ */
+.recover-password-block .recover-div {
+    width: 50%;
+    font-weight: 500;
+}
+
+.recover-password-block .recover-form {
+    width: 50%;
+}
+
+/* ================================
+============ RESET ==============
+================================ */
+.reset-password-block .reset-div {
+    width: 50%;
+    font-weight: 500;
+}
+
+.reset-password-block .reset-form {
+    width: 50%;
+}
