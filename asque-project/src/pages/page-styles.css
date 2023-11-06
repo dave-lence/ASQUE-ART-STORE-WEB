@@ -236,11 +236,69 @@
 .recover-password-block .recover-div {
     width: 50%;
     font-weight: 500;
+    text-align: center;
 }
 
 .recover-password-block .recover-form {
     width: 50%;
 }
+
+.recover-password-block .recover-form .pinbox {
+    display: flex;
+    justify-content: space-between;
+    /* background: #f00; */
+    width: 100%;
+}
+
+.recover-password-block .recover-form .pinbox input {
+    width: 20%;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+    margin: 10px;
+    border: 1px solid #484848;
+    margin-bottom: 20px;
+}
+
+.recover-password-block .recover-form .pinbox input:focus-visible {
+    outline: #BE774C !important;
+    border: 1px solid #BE774C;
+}
+
+/* .pinBox {
+    --width: 296px;
+    --height: 74px;
+    --spacing: 47px;
+
+    display: inline-block;
+    position: relative;
+    width: var(--width);
+    height: var(--height);
+    background-image: url(https://i.stack.imgur.com/JbkZl.png);
+}
+
+.pinEntry {
+    position: absolute;
+    padding-left: 21px;
+    font-family: courier, monospaced;
+    font-size: var(--spacing);
+    height: var(--height);
+    letter-spacing: var(--spacing);
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    clip: rect(0px, calc(var(--width) - 21px), var(--height), 0px);
+} */
+
+/* .recover-form input{
+        padding: 10px;
+        border: 1px solid #ddd;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        font-size: 30px;
+} */
+
 
 /* ================================
 ============ RESET ==============

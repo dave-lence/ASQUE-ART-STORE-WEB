@@ -3,7 +3,23 @@ import { useNavigate } from "react-router-dom";
 
 const RecoverPassword = () => {
     let navigate = useNavigate();
-    const [email, setEmail] = useState("")
+    const [code, setCode] = useState("")
+
+    const goToNext = (field, nextFieldID) => {
+        if (field !== " " && field.length == 1) {
+            const nextInput = document.querySelector("#" + nextFieldID)
+            nextInput.disabled = false
+            nextInput.focus()
+        }
+        checkComplete()
+    }
+    const checkComplete = (e) => {
+        if (code.length === 3) {
+            const submitBtn = document.querySelector("#submitBtn")
+            submitBtn.disabled = false
+        }
+    }
+
     const handleForgotPasswordSubmit = (e) => {
         e.preventDefault();
         navigate("/login/reset-password")
@@ -22,12 +38,17 @@ const RecoverPassword = () => {
                         <p className="recover-description">Please enter the 4 digit sent to your email</p>
                     </div>
                     <div className="recover-form">
-                        <form onSubmit={handleForgotPasswordSubmit}>
-                            <div className="form-group">
-                                <label htmlFor="exampleInputEmail1">Email address</label>
-                                <input onChange={(e) => setEmail(e.target.value)} type="email" className="form-control" id="InputEmail" placeholder="Enter your email" />
+                        <form autoComplete="off" onSubmit={handleForgotPasswordSubmit}>
+                            {/* <div className="pinBox">
+                                <input onChange={(e) => setCode(e.target.value)} className="pinEntry" type="number" maxLength="4" />
+                            </div> */}
+                            <div className="pinbox">
+                                <input type="number" maxLength="1" id="a" onChange={(e) => { e.target.value !== " " && setCode(code + e.target.value); goToNext(e.target.value, "b") }} />
+                                <input type="number" disabled maxLength="1" id="b" onChange={(e) => { e.target.value !== " " && setCode(code + e.target.value); goToNext("b", "c") }} />
+                                <input type="number" disabled maxLength="1" id="c" onChange={(e) => { e.target.value !== " " && setCode(code + e.target.value); goToNext("c", "d") }} />
+                                <input type="number" disabled maxLength="1" id="d" onChange={(e) => { e.target.value !== " " && setCode(code + e.target.value); goToNext(" ", '') }} />
                             </div>
-                            <button type="submit" className="btn recover-btn">Submit</button>
+                            <button type="submit" disabled id="submitBtn" className="btn recover-btn">Submit</button>
                         </form>
                     </div>
                 </div>
