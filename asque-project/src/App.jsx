@@ -11,16 +11,28 @@ import ErrorPage from "./pages/ErrorPage"
 import ForgotPassword from "./pages/auth/ForgotPassword"
 import RecoverPassword from "./pages/auth/RecoverPassword"
 import ResetPassword from "./pages/auth/ResetPassword"
-import TestLogin from "./pages/auth/TestLogin";
+import AboutUs from "./pages/AboutUs";
+import Services from "./pages/Services";
+import Shop from "./pages/Shop";
+import SingleCategory from "./pages/SingleCategory";
+import SingleProduct from "./pages/SingleProduct";
+import EditBio from "./pages/EditBio";
+import Cart from "./pages/Cart";
+import CheckOut from "./pages/CheckOut";
 
 function App() {
-  localStorage.setItem("isAuthenticated", false);
-
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/test-login" element={<TestLogin />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/contact-us" element={<Contact />} />
+        <Route path="/shop" element={<Shop />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/shop/checkout" element={<CheckOut />} />
+        <Route path="/shop/art/:artSlug" element={<SingleProduct />} />
+        <Route path="/shop/category/:category" element={<SingleCategory />} />
         <Route path="/login" element={<Login />} />
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/login/forgot-password" element={<ForgotPassword />} />
@@ -28,6 +40,7 @@ function App() {
         <Route path="/login/reset-password" element={<ResetPassword />} />
         <Route path="/contact-us" element={<Contact />} />
         <Route path="/user/dashboard" element={<Dashboard />} />
+        <Route path="/user/dashboard/edit-profile" element={<EditBio />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </BrowserRouter>

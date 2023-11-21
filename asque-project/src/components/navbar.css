@@ -1,19 +1,315 @@
 nav {
-    background: var(--main-bg);
-    height: 10%;
+    background: #FEFEFE;
+    height: 10vh;
     width: 100%;
     display: flex;
-    position: absolute;
     align-items: center;
     justify-content: space-between;
-    padding: 0.5rem calc((100vw - 900px) / 2);
+    padding: 0.8rem 5rem;
+    /* padding: 0.5rem calc((100vw - 900px) / 2); */
     z-index: 99999;
     transition: all 0.5s ease-in-out 0.5s;
 }
-nav h2 {
+
+.nav-left h2 {
     margin-top: 0.5rem;
-    color: #fff;
     text-transform: uppercase;
     font-size: 26px;
     font-weight: 700;
+    background-clip: initial;
+    background: linear-gradient(132.12deg, #CC6200 1.94%, rgba(205, 113, 27, 0.396996) 94.11%, rgba(205, 115, 32, 0.28) 111.99%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.nav-menu .desktop-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.the-navbar .nav-right .nav-link,
+.nav-menu .desktop-links .nav-link {
+    font-weight: 500;
+    color: #242424 !important;
+    margin: 0 5px;
+}
+
+.the-navbar .nav-menu .desktop-links .nav-link:hover {
+    color: #ACACAC !important;
+}
+
+.the-navbar .nav-right .nav-link.active,
+.nav-menu .desktop-links .nav-link.active {
+    color: #BE774C !important;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 20px; */
+}
+
+.nav-right .cart-wrapper {
+    position: relative;
+    margin-right: 30px;
+}
+
+.nav-right .cart-wrapper span {
+    position: absolute;
+    top: -10px;
+    right: -18px;
+    font-size: 16px;
+    background: #BE774C;
+    color: #fff;
+    border-radius: 50%;
+    padding-left: 9px;
+    padding-right: 9px;
+}
+
+.nav-right .cart-wrapper i {
+    text-align: center;
+    font-size: 18px;
+    color: #BE774C;
+}
+
+.nav-right .seller-btn,
+.nav-right .sign-in-btn {
+    margin: 0 5px;
+}
+
+.nav-right .seller-btn {
+    background: #BE774C;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+.nav-right .sign-in-btn {
+    padding: 10px 15px;
+    border-radius: 3px;
+    border: 1px solid #BE774C;
+    color: #BE774C;
+}
+
+.nav-right .fa-sign-out {
+    color: #BE774C;
+    font-size: 18px;
+    margin: 0 20px;
+}
+
+nav .mobile-icons {
+    display: none;
+}
+
+nav .mobile-links {
+    display: none;
+}
+
+.cartIcon {
+    margin-right: 5px;
+}
+
+nav .cart__wrapper {
+    position: relative;
+}
+
+nav .cart__wrapper span {
+    position: absolute;
+    top: -10px;
+    right: -18px;
+    font-size: 14px;
+    background: #BE774C;
+    color: #fff;
+    border-radius: 50%;
+    padding-left: 9px;
+    padding-right: 9px;
+}
+
+nav .cart__wrapper i {
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+}
+
+.mobile-links .sign-in-btn,
+.mobile-icons .sign-in-btn {
+    padding: 5px 15px;
+    border-radius: 3px;
+    border: 1px solid #BE774C;
+    color: #BE774C;
+}
+
+
+/* =========================================
+=========== Fixed Navbar Styles ============
+========================================= */
+nav.fix-navbar {
+    width: 100%;
+    top: 0;
+    position: fixed;
+    transition: 3s all ease-in-out;
+    -webkit-transition: 3s all ease-in-out;
+    -o-transition: 3s all ease-in-out;
+    background: #FEFEFE;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* =========================================
+=========== Responsive Styles ============
+========================================= */
+
+@media only screen and (max-width: 900px) {
+    nav.nav-clicked {
+        background: #fff;
+        position: fixed;
+        top: 0;
+        z-index: 99999;
+    }
+
+    .nav-menu.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        top: 10%;
+        left: 0;
+        height: 90vh;
+        position: fixed;
+        background: #f8f8f8 !important;
+        z-index: 99999;
+    }
+
+    nav .nav-menu {
+        display: none;
+    }
+
+    .nav-menu.active .mobile-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin-top: 5%; */
+        flex-direction: column;
+    }
+
+    .nav-menu.active .mobile-links .seller-btn {
+        padding: 8px 15px;
+        border-radius: 3px;
+        border: none;
+        color: #fff;
+        background: #BE774C;
+        margin-bottom: 20px;
+    }
+
+    .nav-menu.active .mobile-links .sign-in-btn {
+        margin-top: 5px;
+        margin-bottom: 20px;
+
+    }
+
+    .nav-menu.active .mobile-links .social-links {
+        margin-top: 3%;
+    }
+
+    .nav-menu.active .mobile-links .social-links i {
+        font-size: 26px;
+        margin: 0 20px;
+    }
+
+    nav .mobile-icons {
+        display: flex;
+        align-items: center;
+    }
+
+    nav .cart__wrapper {
+        margin-right: 5px;
+    }
+
+    nav .mobile-icons .fa {
+        display: block;
+        font-size: 1.3rem;
+        cursor: pointer;
+        color: #242424;
+        margin-left: 20px;
+    }
+
+    nav .mobile-icons .fa-times {
+        animation: close-icon-spin 0.5s linear;
+        font-size: 1.7rem;
+    }
+
+    nav .mobile-icons .fa-times,
+    nav .mobile-icons .fa-align-right {
+        margin-left: 25px;
+    }
+
+    @keyframes close-icon-spin {
+        0% {
+            transform: translateX(0);
+        }
+
+        25% {
+            transform: translateX(5px);
+        }
+
+        50% {
+            transform: translateX(-5px);
+        }
+
+        75% {
+            transform: translateX(5px);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    nav .mobile-icons a:hover {
+        text-decoration: none;
+    }
+
+    nav .nav-right {
+        display: none;
+    }
+
+    .nav-menu.active .nav-link {
+        margin: 0;
+        text-align: center;
+        margin: 1.3% 0;
+        color: #242424;
+        font-size: 1.2rem;
+    }
+
+    .desktop-links {
+        flex-direction: column;
+    }
+
+    .nav-menu.active .nav-link.active {
+        color: #BE774C;
+    }
+
+    nav.fix-navbar .fa {
+        animation: close-icon-spin 0.5s linear;
+        color: #242424;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    nav {
+        padding: 0.8rem 1.5rem;
+    }
+
+    .mobile-icons .sign-in-btn {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    /* .mobile-icons .sign-in-btn {
+        display: none;
+    } */
 }

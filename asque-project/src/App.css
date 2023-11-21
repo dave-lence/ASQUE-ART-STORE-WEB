@@ -1,8 +1,34 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: 'poppins';
-  background: #e4e4e4;
+  font-family: 'poppins', sans-serif;
+  background: #f8f8f8;
+  overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ACACAC;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #BE774C;
+}
+
+
+html {
+  scroll-behavior: smooth;
 }
 
 a:hover {
@@ -16,4 +42,113 @@ a:hover {
 
 .btn:focus {
   box-shadow: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* ================================
+============ ART HOVER STYLES ==============
+================================ */
+.art-col {
+  /* background: #fff; */
+  margin-bottom: 30px;
+}
+
+.art-col .art-block {
+  background: #fff;
+  -webkit-box-shadow: 2px 3px 5px 0 #000000c7;
+  -moz-box-shadow: 2px 3px 5px 0 #000000c7;
+  -ms-box-shadow: 2px 3px 5px 0 #000000c7;
+  -o-box-shadow: 2px 3px 5px 0 #000000c7;
+  box-shadow: 2px 3px 5px 0 #000000c7;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.art-col .image-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 210px;
+}
+
+.art-col .image-wrapper img {
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+}
+
+.art-col .image-wrapper #slide {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+  background: #000000d0;
+}
+
+.image-wrapper:hover #slide {
+  transition: 1s;
+  top: 0;
+}
+
+.art-col #slide a {
+  border: 1px solid #fff;
+  background: #fff;
+  color: #BE774C;
+  border-radius: 5rem;
+  padding: 5px 25px;
+  margin-bottom: 20px;
+}
+
+.art-col #slide a:hover {
+  color: #fff;
+  background: #BE774C;
+}
+
+.art-col #slide .utilities .fas {
+  display: inline;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 18px;
+  margin: 0 10px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.art-col #slide .utilities .fas:hover {
+  background: #BE774C;
+  color: #fff;
+}
+
+.art-col .art-info {
+  margin: 20px 10px 0 10px;
+  display: flex;
+  color: #484848;
+  justify-content: space-between;
+}
+
+.art-col .art-info:hover {
+  color: #BE774C;
+}
+
+.art-col .art-info:hover {
+  color: #242424;
+}
+
+.art-col .art-info p {
+  width: 70%;
+}
+
+
+.art-col .art-info h6 {
+  font-weight: 600;
 }

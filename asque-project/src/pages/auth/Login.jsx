@@ -21,8 +21,8 @@ const Login = () => {
 
   const handleLoginSubmit = (e) => {
     e.preventDefault();
-    console.log(email)
-    console.log(password)
+    // console.log(email)
+    // console.log(password)
     if (email == "victordev@gmail.com" && password == 'abc') {
       // send details to server and log user in...or not
       localStorage.setItem("isAuthenticated", true);
@@ -52,46 +52,48 @@ const Login = () => {
           <p className="author">- Thomas Merton</p>
         </div>
         <div className="login-block">
-          <h2>ASQUE</h2>
-          <p className="login">Welcome back!</p>
-          <div className="login-div">
-            <p className="login-description">Welcome back! Please enter your details</p>
-          </div>
-          <div className="login-form">
-            <form onSubmit={handleLoginSubmit}>
-              <div className="form-group">
-                <label htmlFor="exampleInputEmail1">Email address</label>
-                <input onChange={(e) => setEmail(e.target.value)} type="email" className="form-control" id="InputEmail" placeholder="Enter your email" />
-              </div>
-              <div className="form-group">
-                <label htmlFor="exampleInputPassword1">Password</label>
-                <div className='reveal'>
-                  <span onClick={toggleVisibility} className='eye-span'>
-                    <i id="password-eye" className="fa fa-eye-slash"></i>
-                  </span>
-                  <input onChange={(e) => setPassword(e.target.value)} type="password" className='form-control' id="InputPassword1" placeholder="Enter your Password" />
+          <div className="inner-block">
+            <h2>ASQUE</h2>
+            <p className="login">Welcome back!</p>
+            <div className="desc-div">
+              <p className="login-description">Welcome back! Please enter your details</p>
+            </div>
+            <div className="login-form">
+              <form onSubmit={handleLoginSubmit}>
+                <div className="form-group">
+                  <label htmlFor="exampleInputEmail1">Email address</label>
+                  <input onChange={(e) => setEmail(e.target.value)} type="email" className="form-control" id="InputEmail" placeholder="Enter your email" />
                 </div>
-              </div>
-              <div className="remember-forgot-div">
-                <div className="form-check">
-                  <input type="checkbox" className="form-check-input" id="remember-me" />
-                  <label className="form-check-label" htmlFor="remember-me">Remember me</label>
+                <div className="form-group">
+                  <label htmlFor="exampleInputPassword1">Password</label>
+                  <div className='reveal'>
+                    <span onClick={toggleVisibility} className='eye-span'>
+                      <i id="password-eye" className="fa fa-eye-slash"></i>
+                    </span>
+                    <input onChange={(e) => setPassword(e.target.value)} type="password" className='form-control' id="InputPassword1" placeholder="Enter your Password" />
+                  </div>
                 </div>
-                <NavLink to="/login/forgot-password" className="forgot-password-cta">
-                  Forgot password?
+                <div className="remember-forgot-div">
+                  <div className="form-check">
+                    <input type="checkbox" className="form-check-input" id="remember-me" />
+                    <label className="form-check-label" htmlFor="remember-me">Remember me</label>
+                  </div>
+                  <NavLink to="/login/forgot-password" className="forgot-password-cta">
+                    Forgot password?
+                  </NavLink>
+                </div>
+                <button type="submit" className="btn sign-in-btn">Log in</button>
+                <button type="submit" className="btn google-btn">
+                  <i className="fab fa-google"></i>
+                  Sign in with google
+                </button>
+              </form>
+              <div className="sign-in-option">
+                Don’t have an account? {""}
+                <NavLink to="/sign-up" className="log-in-cta">
+                  Sign up
                 </NavLink>
               </div>
-              <button type="submit" className="btn sign-in-btn">Log in</button>
-              <button type="submit" className="btn google-btn">
-                <i className="fab fa-google"></i>
-                Sign in with google
-              </button>
-            </form>
-            <div className="sign-in-option">
-              Don’t have an account? {""}
-              <NavLink to="/sign-up" className="log-in-cta">
-                Sign up
-              </NavLink>
             </div>
           </div>
         </div>
