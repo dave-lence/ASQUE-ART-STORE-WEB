@@ -1,0 +1,23 @@
+.withdraw-div h5 {
+    font-weight: 600;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.withdraw-div .add-bank {
+    color: #BE774C;
+    font-size: 14px;
+}
+
+.withdraw-div form {
+    width: 40%;
+    margin-bottom: 50px;
+}
+
+.withdraw-div form .btn {
+    background: #BE774C;
+    color: #fff;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 8px;
+}

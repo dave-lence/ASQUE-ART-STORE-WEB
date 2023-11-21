@@ -1,0 +1,9 @@
+.no-wishlist {
+    margin-bottom: 50px;
+}
+
+.no-wishlist h5 {
+    width: fit-content;
+    border: 1px solid #ACACAC;
+    padding: 10px;
+}

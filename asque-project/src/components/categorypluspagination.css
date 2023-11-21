@@ -1,0 +1,69 @@
+.pageNumbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.pageNumbers .numbers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pageNumbers .numbers ul {
+    padding-inline-start: 0;
+    margin-bottom: 0;
+}
+
+.pageNumbers .numbers li {
+    display: inline;
+}
+
+.pageNumbers li {
+    padding: 5px 15px;
+    border: 1px solid #4c4c4c;
+    cursor: pointer;
+    color: #4c4c4c;
+    margin: 0 10px;
+}
+
+.pageNumbers li.active {
+    background: #4c4c4c;
+    color: #fff;
+}
+
+.pageNumbers .btn-cover-prev,
+.pageNumbers .btn-cover-next {
+    border: none;
+}
+
+.pageNumbers .btn-cover-prev button,
+.pageNumbers .btn-cover-next button {
+    background: #BE774C;
+    color: #fff;
+    border: 1px solid #BE774C;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 5px 20px;
+    margin: 0 10px;
+}
+
+.pageNumbers .btn-cover-prev button:disabled,
+.pageNumbers .btn-cover-next button:disabled {
+    background: #4b4b4b5f;
+    color: #fff;
+    border: 1px solid #4b4b4b5f;
+}
+
+/* 
+
+
+.btn__cover__prev button:focus,
+.btn__cover__next button:focus,
+.btn__cover__prev button:active,
+.btn__cover__next button:active {
+  box-shadow: none;
+  outline: none;
+} */

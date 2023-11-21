@@ -1,0 +1,55 @@
+.wallet-div {
+    padding-left: 0;
+}
+
+.wallet-div .withdraw-btn {
+    background: #BE774C;
+    color: #fff;
+    border: 1px solid #BE774C;
+    padding: 10px 20px;
+    border-radius: 3px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.wallet-div .withdraw-btn:hover {
+    color: #BE774C;
+    background: transparent;
+}
+
+.wallet-div .withdrawal-history-div {
+    margin-top: 30px;
+    margin-bottom: 130px;
+}
+
+.wallet-div .withdrawal-history-div h5 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.wallet-div .withdrawal-history-div .col-lg-3 {
+    text-align: center;
+}
+
+/* .wallet-div .withdrawal-history-div .col-lg-3.status {
+    text-align: left;
+} */
+
+.wallet-div .withdrawal-history-div .action-row {
+    border: 1px solid #ACACAC;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.wallet-div .withdrawal-history-div .action-row .fa-times {
+    color: #FF473E;
+    margin-left: 10px;
+}
+
+.wallet-div .withdrawal-history-div .action-row .fa-check {
+    color: #F4F4F4;
+    background: #00D26A;
+    margin-left: 10px;
+    padding: 2px;
+    border-radius: 3px;
+}

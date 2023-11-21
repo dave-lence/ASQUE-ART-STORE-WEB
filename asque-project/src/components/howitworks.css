@@ -1,0 +1,52 @@
+.howitworks-div {
+    margin-bottom: 10vh;
+}
+
+.howitworks-div h3 {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.howitworks-div .howitworks-row {
+    margin-top: 60px;
+}
+
+.howitworks-div .howitworks-row .procedure-div {
+    padding-left: 2rem;
+    border-left: 0.1rem dashed #BE774C;
+}
+
+.howitworks-div .howitworks-row .procedure-div .procedure-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.howitworks-div .procedure-div .procedure-item .title {
+    position: relative;
+}
+
+.howitworks-div .number-circle {
+    border-radius: 50%;
+    background: #BE774C;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    position: absolute;
+    left: -15px;
+}
+
+.howitworks-img-box img {
+    height: 45vh;
+}
+
+.howitworks-img-box.workings-box {
+    text-align: right;
+}

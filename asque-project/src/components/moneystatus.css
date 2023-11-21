@@ -1,0 +1,26 @@
+.earnings-div {
+    display: flex;
+    justify-content: space-around;
+    background: #fff;
+    padding: 30px 10px;
+    border-radius: 8px;
+}
+
+.earning-description {
+    color: #BE774C;
+    padding: 0 10px;
+}
+
+.earning-description p {
+    margin-bottom: 0;
+}
+
+.earnings-div .money-div {
+    height: 80px;
+    width: 80px;
+    text-align: right;
+}
+
+.earnings-div .money-icon {
+    object-fit: cover;
+}

@@ -1,0 +1,62 @@
+.hero-div {
+    background: #000;
+    height: 20vh;
+}
+
+.hero-div .profile-img-box img {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    position: absolute;
+    top: 150px;
+    left: 40px;
+    top: 100%;
+    left: 4%;
+    transform: translate(-50%, -50%);
+}
+
+/* 
+.hero-div .camera-icon {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 170px;
+    left: 70px;
+    transform: translate(-50%, -50%);
+} */
+
+
+.hero-div .hero-icon-wrapper .profile-icon-wrapper,
+.hero-div .hero-icon-wrapper .hero-camera-icon {
+    display: inline-block;
+    position: relative;
+}
+
+.hero-div .profile-icon-wrapper input[type=file],
+.hero-div .hero-icon-wrapper input[type=file] {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.hero-div .hero-icon-wrapper .hero-camera-icon {
+    top: 50%;
+    left: 50%;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.hero-div .profile-icon-wrapper .edit-profile-icon {
+    top: 100%;
+    left: 3.8%;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}

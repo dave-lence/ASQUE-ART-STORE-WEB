@@ -1,0 +1,25 @@
+.review-div {
+    margin-bottom: 10vh;
+}
+
+.review-div h3 {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 90px;
+}
+
+.review-div .vendor-img-box img {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+}
+
+.review-div .vendor-name {
+    font-weight: 600;
+}
+
+.review-div i {
+    color: #BE774C;
+    margin: 0 4px;
+}

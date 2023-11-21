@@ -1,0 +1,103 @@
+.landing-section {
+    position: relative;
+}
+
+.landing-section .img-box {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.landing-section .img-box img {
+    height: 90vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.landing-section .landing-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+    /* background: #000; */
+    text-align: center;
+}
+
+.landing-section .landing-text p,
+.landing-section .landing-text h1 {
+    color: #E3E3E3;
+}
+
+.landing-section .landing-text p {
+    margin-bottom: 40px;
+}
+
+.landing-section .landing-text h1 {
+    line-height: 4rem;
+    margin-bottom: 30px;
+}
+
+.landing-section .landing-text .shop-now-btn {
+    background: #BE774C;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.landing-section .landing-text .shop-now-btn:hover {
+    background: transparent;
+    color: #BE774C;
+    border: 1px solid #BE774C;
+}
+
+.landing-section .landing-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: -110px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    background: #fefefe;
+    width: 70%;
+    -webkit-box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.705);
+    -moz-box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.705);
+    -ms-box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.705);
+    -o-box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.705);
+    box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.705);
+}
+
+.landing-section .landing-info .info-item {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #242424;
+}
+
+.landing-section .landing-info .info-item .info-img-box {
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 480px) {
+    .landing-section .landing-text {
+        width: 100%;
+    }
+
+    .landing-section .landing-text h1 {
+        font-size: 24px;
+        width: 80%;
+        margin: 0 auto;
+        line-height: 2.5rem;
+        margin-bottom: 10px;
+    }
+
+    .landing-section .landing-info {
+        display: none;
+    }
+}

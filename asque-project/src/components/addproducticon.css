@@ -1,0 +1,30 @@
+.addproduct-div {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0 80px 0;
+}
+
+.addproduct-div .add-cta {
+    padding: 30px 20px;
+    background: linear-gradient(0deg, #E3E3E3, #E3E3E3),
+        linear-gradient(0deg, #000000, #000000);
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    cursor: pointer;
+}
+
+.addproduct-div .add-cta i {
+    background: #BE774C;
+    color: #f4f4f4;
+    border-radius: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.addproduct-div .add-cta p {
+    margin-bottom: 0;
+    font-weight: 600;
+}

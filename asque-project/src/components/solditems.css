@@ -1,0 +1,46 @@
+.solditems-div {
+    margin-bottom: 20px;
+}
+
+.solditems-div .sold-images .wrapper {
+    margin-bottom: 20px;
+}
+
+.solditems-div .sold-images .wrapper .card .card-body .card-text {
+    color: #BE774C;
+    font-weight: 600;
+}
+
+.modalBackground {
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    z-index: 1000000;
+}
+
+.modalBackground.hidden {
+    display: none;
+}
+
+.modalBackground .modal-container {
+    width: 80%;
+}
+
+.modalBackground .modal-container .modal-body {
+    background: #f8f8f8;
+    display: inline-block;
+}
+
+.modalBackground .modal-container .modal-body img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}

@@ -1,0 +1,64 @@
+.footer-div {
+    background: #242424;
+    padding: 60px 30px;
+}
+
+.footer-div .row {
+    margin-right: 0;
+}
+
+.footer-div .first h2 {
+    color: #CC6200;
+    margin-bottom: 20px;
+}
+
+.footer-div .first p {
+    color: #fff;
+}
+
+.footer-div .newsletter-form {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.footer-div .newsletter-form input {
+    background: transparent;
+    padding: 0 20px;
+    width: 70%;
+    border-radius: 3px;
+    border: 1px solid #ACACAC;
+    color: #ACACAC;
+    margin-right: 10px;
+}
+
+.footer-div .newsletter-form button {
+    background: #BE774C;
+    color: #E3E3E3;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+.footer-div .first {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-div .last h5,
+.footer-div .second p:first-child,
+.footer-div .third p:first-child {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.footer-div .last p,
+.footer-div .second p,
+.footer-div .third p {
+    color: #E3E3E3;
+}
